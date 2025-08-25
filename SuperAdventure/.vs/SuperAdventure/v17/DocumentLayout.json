@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\InventoryItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B9900D1-7E19-4D58-8D2B-F5F4C482D103}|SuperAdventure.csproj|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B9900D1-7E19-4D58-8D2B-F5F4C482D103}|SuperAdventure.csproj|solutionrelative:superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\LivingCreature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\HealingPotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\InventoryItem.cs",
+              "RelativeToolTip": "..\\Engine\\InventoryItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:49:11.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\InventoryItem.cs",
+              "RelativeToolTip": "..\\..\\Engine\\InventoryItem.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T04:50:46.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LivingCreature.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\LivingCreature.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\LivingCreature.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\LivingCreature.cs",
+              "RelativeToolTip": "..\\..\\Engine\\LivingCreature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T01:07:54.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Monster.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Monster.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Monster.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Monster.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Monster.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:03:24.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Player.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Player.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Player.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Player.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T04:50:41.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Weapon.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Weapon.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Weapon.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Weapon.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:04:29.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SuperAdventure.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeDocumentMoniker": "SuperAdventure.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeToolTip": "SuperAdventure.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T04:58:04.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Location.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Location.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Location.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Location.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:02:27.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Quest.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Quest.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Quest.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Quest.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Quest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:03:55.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HealingPotion.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\HealingPotion.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\HealingPotion.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\HealingPotion.cs",
+              "RelativeToolTip": "..\\..\\Engine\\HealingPotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:00:42.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Item.cs",
+              "RelativeDocumentMoniker": "..\\..\\Engine\\Item.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Item.cs",
+              "RelativeToolTip": "..\\..\\Engine\\Item.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:01:51.235Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
