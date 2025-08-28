@@ -4,3 +4,9 @@ C:\Users\minhh\OneDrive\Desktop\Project\Engine\obj\Debug\Engine.csproj.AssemblyR
 C:\Users\minhh\OneDrive\Desktop\Project\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
 C:\Users\minhh\OneDrive\Desktop\Project\Engine\obj\Debug\Engine.dll
 C:\Users\minhh\OneDrive\Desktop\Project\Engine\obj\Debug\Engine.pdb
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\bin\Debug\Engine.dll
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\bin\Debug\Engine.pdb
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\obj\Debug\Engine.csproj.AssemblyReference.cache
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\obj\Debug\Engine.dll
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\Engine\obj\Debug\Engine.pdb

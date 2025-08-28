@@ -12,3 +12,17 @@ C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\obj\Debug\SuperAdv.5A2A7C
 C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\obj\Debug\SuperAdventure.exe
 C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\obj\Debug\SuperAdventure.pdb
 C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\obj\Debug\SuperAdventure.exe.config
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.pdb
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\bin\Debug\Engine.dll
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\bin\Debug\Engine.pdb
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.AssemblyReference.cache
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe.config
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.cache
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.CoreCompileInputs.cache
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdv.5A2A7CD7.Up2Date
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\minhh\OneDrive\Desktop\Project\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.pdb
