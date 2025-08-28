@@ -3,6 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7B9900D1-7E19-4D58-8D2B-F5F4C482D103}|SuperAdventure.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\superadventure\\superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B9900D1-7E19-4D58-8D2B-F5F4C482D103}|SuperAdventure.csproj|solutionrelative:superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\questcompletionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\playerquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\lootitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EB01B777-D14F-4D28-9CCF-392F76CF7FE6}|..\\Engine\\Engine.csproj|c:\\users\\minhh\\onedrive\\desktop\\project\\superadventure\\engine\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,19 +74,122 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SuperAdventure.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeDocumentMoniker": "SuperAdventure.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs [Design]",
+              "RelativeToolTip": "SuperAdventure.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T01:48:13.558Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\World.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\World.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\World.cs",
+              "RelativeToolTip": "..\\Engine\\World.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T03:21:30.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Monster.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Monster.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\Monster.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Monster.cs",
+              "RelativeToolTip": "..\\Engine\\Monster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T05:12:40.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quest.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Quest.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\Quest.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Quest.cs",
+              "RelativeToolTip": "..\\Engine\\Quest.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T05:10:57.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Player.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\Player.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\Player.cs",
+              "RelativeToolTip": "..\\Engine\\Player.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T05:10:34.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestCompletionItem.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\QuestCompletionItem.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\QuestCompletionItem.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\QuestCompletionItem.cs",
+              "RelativeToolTip": "..\\Engine\\QuestCompletionItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:30:15.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerQuest.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\PlayerQuest.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\PlayerQuest.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\PlayerQuest.cs",
+              "RelativeToolTip": "..\\Engine\\PlayerQuest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:29:50.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LootItem.cs",
+              "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\LootItem.cs",
+              "RelativeDocumentMoniker": "..\\Engine\\LootItem.cs",
+              "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\LootItem.cs",
+              "RelativeToolTip": "..\\Engine\\LootItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:29:23.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\InventoryItem.cs",
               "RelativeDocumentMoniker": "..\\Engine\\InventoryItem.cs",
               "ToolTip": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\Engine\\InventoryItem.cs",
               "RelativeToolTip": "..\\Engine\\InventoryItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T23:49:11.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\InventoryItem.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\InventoryItem.cs",
@@ -72,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "LivingCreature.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\LivingCreature.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\LivingCreature.cs",
@@ -84,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Monster.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Monster.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Monster.cs",
@@ -96,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Player.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Player.cs",
@@ -108,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Weapon.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Weapon.cs",
@@ -120,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "SuperAdventure.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
               "RelativeDocumentMoniker": "SuperAdventure.cs",
@@ -133,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Location.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Location.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Location.cs",
@@ -145,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Quest.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Quest.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Quest.cs",
@@ -157,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "HealingPotion.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\HealingPotion.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\HealingPotion.cs",
@@ -169,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\minhh\\OneDrive\\Desktop\\Project\\Engine\\Item.cs",
               "RelativeDocumentMoniker": "..\\..\\Engine\\Item.cs",
