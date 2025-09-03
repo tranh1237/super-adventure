@@ -19,16 +19,23 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
-            _player = new Player(10, 10, 20, 0, 1);
+            _player = new Player(10, 10, 20, 0);
             MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
             _player.Inventory.Add(new InventoryItem(World.ItemByID(World.ITEM_ID_RUSTY_SWORD), 1));
 
+            UpdatePlayerStats();
+        }
+
+        private void UpdatePlayerStats()
+        {
+            // Refresh player information and inventory controls
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+            // Optionally, show experience needed for next level:
+            // lblExpToNextLevel.Text = _player.ExperienceToNextLevel.ToString();
         }
-
         private void btnNorth_Click(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToNorth);
@@ -48,7 +55,8 @@ namespace SuperAdventure
         {
             MoveTo(_player.CurrentLocation.LocationToWest);
         }
-
+        
+        
         private void MoveTo(Location newLocation)
         {
             //Does the location have any required items
@@ -110,7 +118,7 @@ namespace SuperAdventure
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardItem.Name + Environment.NewLine;
                             rtbMessages.Text += Environment.NewLine;
 
-                            _player.ExperiencePoints += newLocation.QuestAvailableHere.RewardExperiencePoints;
+                            _player.AddExperiencePoints(newLocation.QuestAvailableHere.RewardExperiencePoints); 
                             _player.Gold += newLocation.QuestAvailableHere.RewardGold;
 
                             // Add the reward item to the player's inventory
@@ -178,6 +186,9 @@ namespace SuperAdventure
                 btnUsePotion.Visible = false;
             }
 
+            // Refresh player's stats
+            UpdatePlayerStats();
+
             // Refresh player's inventory list
             UpdateInventoryListInUI();
 
@@ -193,15 +204,7 @@ namespace SuperAdventure
 
         private void UpdateInventoryListInUI()
         {
-            dgvInventory.RowHeadersVisible = false;
-
-            dgvInventory.ColumnCount = 2;
-            dgvInventory.Columns[0].Name = "Name";
-            dgvInventory.Columns[0].Width = 197;
-            dgvInventory.Columns[1].Name = "Quantity";
-
-            dgvInventory.Rows.Clear();
-
+            SetupDataGridView(dgvInventory, new[] { "Name", "Quantity" }, new[] { 197, 0 });
             foreach (InventoryItem inventoryItem in _player.Inventory)
             {
                 if (inventoryItem.Quantity > 0)
@@ -213,15 +216,7 @@ namespace SuperAdventure
 
         private void UpdateQuestListInUI()
         {
-            dgvQuests.RowHeadersVisible = false;
-
-            dgvQuests.ColumnCount = 2;
-            dgvQuests.Columns[0].Name = "Name";
-            dgvQuests.Columns[0].Width = 197;
-            dgvQuests.Columns[1].Name = "Done?";
-
-            dgvQuests.Rows.Clear();
-
+            SetupDataGridView(dgvQuests, new[] { "Name", "Done?" }, new[] { 197, 0 });
             foreach (PlayerQuest playerQuest in _player.Quests)
             {
                 dgvQuests.Rows.Add(new[] { playerQuest.Details.Name, playerQuest.IsCompleted.ToString() });
@@ -230,68 +225,22 @@ namespace SuperAdventure
 
         private void UpdateWeaponListInUI()
         {
-            List<Weapon> weapons = new List<Weapon>();
-
-            foreach (InventoryItem inventoryItem in _player.Inventory)
-            {
-                if (inventoryItem.Details is Weapon)
-                {
-                    if (inventoryItem.Quantity > 0)
-                    {
-                        weapons.Add((Weapon)inventoryItem.Details);
-                    }
-                }
-            }
-
-            if (weapons.Count == 0)
-            {
-                // The player doesn't have any weapons, so hide the weapon combobox and "Use" button
-                cboWeapons.Visible = false;
-                btnUseWeapon.Visible = false;
-            }
-            else
-            {
-                cboWeapons.DataSource = weapons;
-                cboWeapons.DisplayMember = "Name";
-                cboWeapons.ValueMember = "ID";
-
-                cboWeapons.SelectedIndex = 0;
-            }
+            UpdateItemListInUI<Weapon>(cboWeapons, btnUseWeapon);
         }
 
         private void UpdatePotionListInUI()
         {
-            List<HealingPotion> healingPotions = new List<HealingPotion>();
-
-            foreach (InventoryItem inventoryItem in _player.Inventory)
-            {
-                if (inventoryItem.Details is HealingPotion)
-                {
-                    if (inventoryItem.Quantity > 0)
-                    {
-                        healingPotions.Add((HealingPotion)inventoryItem.Details);
-                    }
-                }
-            }
-
-            if (healingPotions.Count == 0)
-            {
-                // The player doesn't have any potions, so hide the potion combobox and "Use" button
-                cboPotions.Visible = false;
-                btnUsePotion.Visible = false;
-            }
-            else
-            {
-                cboPotions.DataSource = healingPotions;
-                cboPotions.DisplayMember = "Name";
-                cboPotions.ValueMember = "ID";
-
-                cboPotions.SelectedIndex = 0;
-            }
+            UpdateItemListInUI<HealingPotion>(cboPotions, btnUsePotion);
         }
 
         private void btnUseWeapon_Click_1(object sender, EventArgs e)
         {
+            if (_currentMonster == null)
+            {
+                rtbMessages.Text += "There is no monster here to attack." + Environment.NewLine;
+                return;
+            }
+
             // Get the currently selected weapon from the cboWeapons ComboBox
             Weapon currentWeapon = (Weapon)cboWeapons.SelectedItem;
             // Determine the amount of damage to do to the monster
@@ -307,7 +256,7 @@ namespace SuperAdventure
                 rtbMessages.Text += Environment.NewLine;
                 rtbMessages.Text += "You defeated the " + _currentMonster.Name + Environment.NewLine;
                 // Give player experience points for killing the monster
-                _player.ExperiencePoints += _currentMonster.RewardExperiencePoints;
+                _player.AddExperiencePoints(_currentMonster.RewardExperiencePoints); 
                 rtbMessages.Text += "You receive " + _currentMonster.RewardExperiencePoints.ToString() + " experience points" + Environment.NewLine;
                 // Give player gold for killing the monster 
                 _player.Gold += _currentMonster.RewardGold;
@@ -347,10 +296,7 @@ namespace SuperAdventure
                     }
                 }
                 // Refresh player information and inventory controls
-                lblHitPoints.Text = _player.CurrentHitPoints.ToString();
-                lblGold.Text = _player.Gold.ToString();
-                lblExperience.Text = _player.ExperiencePoints.ToString();
-                lblLevel.Text = _player.Level.ToString();
+                UpdatePlayerStats();
                 UpdateInventoryListInUI();
                 UpdateWeaponListInUI();
                 UpdatePotionListInUI();
@@ -420,6 +366,56 @@ namespace SuperAdventure
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             UpdateInventoryListInUI();
             UpdatePotionListInUI();
+        }
+
+        private void rtbMessages_TextChanged(object sender, EventArgs e)
+        {
+            rtbMessages.SelectionStart = rtbMessages.Text.Length;
+            rtbMessages.ScrollToCaret();
+        }
+
+        // Helper to set up DataGridView columns and clear rows
+        private void SetupDataGridView(DataGridView dgv, string[] columnNames, int[] columnWidths)
+        {
+            dgv.RowHeadersVisible = false;
+            dgv.ColumnCount = columnNames.Length;
+            for (int i = 0; i < columnNames.Length; i++)
+            {
+                dgv.Columns[i].Name = columnNames[i];
+                if (i < columnWidths.Length)
+                    dgv.Columns[i].Width = columnWidths[i];
+            }
+            dgv.Rows.Clear();
+        }
+
+        // Generic helper to update ComboBox for weapons or potions
+        private void UpdateItemListInUI<T>(ComboBox comboBox, Button useButton) where T : Item
+        {
+            var items = _player.Inventory
+                .Where(ii => ii.Details is T && ii.Quantity > 0)
+                .Select(ii => (T)ii.Details)
+                .ToList();
+
+            if (items.Count == 0)
+            {
+                comboBox.Visible = false;
+                useButton.Visible = false;
+            }
+            else
+            {
+                comboBox.DataSource = items;
+                comboBox.DisplayMember = "Name";
+                comboBox.ValueMember = "ID";
+                comboBox.SelectedIndex = 0;
+                comboBox.Visible = true;
+                useButton.Visible = true;
+            }
+        }
+
+        // Helper to format loot messages
+        private string FormatLootMessage(InventoryItem item)
+        {
+            return $"You loot {item.Quantity} {(item.Quantity == 1 ? item.Details.Name : item.Details.NamePlural)}{Environment.NewLine}";
         }
     }
 }
