@@ -235,7 +235,42 @@ namespace SuperAdventure
 
         private void UpdateWeaponListInUI()
         {
-            UpdateItemListInUI<Weapon>(cboWeapons, btnUseWeapon);
+            List<Weapon> weapons = new List<Weapon>();
+
+            foreach (InventoryItem inventoryItem in _player.Inventory)
+            {
+                if (inventoryItem.Details is Weapon)
+                {
+                    if (inventoryItem.Quantity > 0)
+                    {
+                        weapons.Add((Weapon)inventoryItem.Details);
+                    }
+                }
+            }
+
+            if (weapons.Count == 0)
+            {
+                // The player doesn't have any weapons, so hide the weapon combobox and "Use" button
+                cboWeapons.Visible = false;
+                btnUseWeapon.Visible = false;
+            }
+            else
+            {
+                cboWeapons.SelectedIndexChanged -= cboWeapons_SelectedIndexChanged;
+                cboWeapons.DataSource = weapons;
+                cboWeapons.SelectedIndexChanged += cboWeapons_SelectedIndexChanged;
+                cboWeapons.DisplayMember = "Name";
+                cboWeapons.ValueMember = "ID";
+
+                if (_player.CurrentWeapon != null)
+                {
+                    cboWeapons.SelectedItem = _player.CurrentWeapon;
+                }
+                else
+                {
+                    cboWeapons.SelectedIndex = 0;
+                }
+            }
         }
 
         private void UpdatePotionListInUI()
@@ -338,15 +373,28 @@ namespace SuperAdventure
 
         private void btnUsePotion_Click(object sender, EventArgs e)
         {
+            if (_currentMonster == null)
+            {
+                rtbMessages.Text += "There is no monster here. You don't need to use a healing potion now." + Environment.NewLine;
+                return;
+            }
+
+            if (_player.CurrentHitPoints == _player.MaximumHitPoints)
+            {
+                rtbMessages.Text += "Your hit points are already full. No need to use a potion." + Environment.NewLine;
+                return;
+            }
+
             // Get the currently selected potion from the combobox
             HealingPotion potion = (HealingPotion)cboPotions.SelectedItem;
+
             // Add healing amount to the player's current hit points
-            _player.CurrentHitPoints = (_player.CurrentHitPoints + potion.AmountToHeal);
-            // CurrentHitPoints cannot exceed player's MaximumHitPoints
+            _player.CurrentHitPoints += potion.AmountToHeal;
             if (_player.CurrentHitPoints > _player.MaximumHitPoints)
             {
                 _player.CurrentHitPoints = _player.MaximumHitPoints;
             }
+
             // Remove the potion from the player's inventory
             foreach (InventoryItem ii in _player.Inventory)
             {
@@ -431,6 +479,11 @@ namespace SuperAdventure
         private void SuperAdventure_FormClosing(object sender, FormClosingEventArgs e)
         {
             File.WriteAllText(PLAYER_DATA_FILE_NAME, _player.ToXmlString());
+        }
+
+        private void cboWeapons_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
         }
     }
 }
